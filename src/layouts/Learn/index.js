@@ -3,15 +3,13 @@ import { Link } from 'react-router'
 import classnames from 'classnames'
 import Default from '../../layouts/Default'
 import s from './styles.css'
-// import sglobal from '../../index.global.css'
 
 //fragm & components
-// import Button from '../../components/Button'
 // import OverviewMenu from '../../fragments/OverviewMenu'
 // import Header from '../../fragments/Header'
 // import Logo from '../../fragments/Logo'
-// import SubMenu from '../../fragments/SubMenu'
-// import Btn from '../../fragments/Btn'
+import SubMenu from '../../fragments/SubMenu'
+import Button from '../../fragments/Button'
 
 //images
 import ServerlessMovementImage from '../../assets/theserverlessmovement.png'
@@ -33,11 +31,9 @@ class LearnPage extends React.Component {
 
     return (
       <Default>
-          {/* <div className={s.mainWrapper}> */}
-            {/* <Header /> */}
             <div className="outerWrapper">
               <div className={s.mainImage}>
-                {/* <SubMenu horizPos={true}/> */}
+                <SubMenu horizPos={true}/>
                 <div className={s.mainImageInnerwrapper}>
                     <div>
                         <h1>Why Serverless?</h1>
@@ -48,7 +44,7 @@ class LearnPage extends React.Component {
                         </div>
                     </div>
                     <div>
-                    {/* <SubMenu horizPos={false}/> */}
+                    <SubMenu horizPos={false}/>
                     </div>
                 </div>
               </div>
@@ -83,7 +79,7 @@ class LearnPage extends React.Component {
               <section className={s.getStarted}>
                   <div className={s.innerWrapper}>
                     <p>focus on your business logic, not your servers.</p>
-                    {/* <Btn to={'#'} btnClassType={'white'} text={'get started'}/> */}
+                    <Button to={'#'} btnClassType={'white'} text={'get started'}/>
                   </div>
               </section>
               <section className={s.benefits}>
@@ -161,7 +157,7 @@ class LearnPage extends React.Component {
                       <p>Or if you’re ready, follow our step-by-step guide to start building a Serverless Application with your favorite language.</p>
                     </div>
                     <div className={colRight}>
-                      {/* <SubMenu horizPos={false} appliedClass={'red'}/> */}
+                      <SubMenu horizPos={false} appliedClass={'red'}/>
                     </div>
                 </div>
               </section>

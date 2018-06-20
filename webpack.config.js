@@ -130,7 +130,7 @@ export default (config = {}) => {
         },
         {
           test: /\.svg$/,
-          loader: 'raw-loader',
+          loader: 'url-loader?limit=10000',
         },
       ],
     },
