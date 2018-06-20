@@ -23,6 +23,7 @@ module.exports = (config, hotLoadedVariables) => [
   // require('cssnano'), breaks keyframes
   /* enable nested css selectors like Sass/Less */
   require('postcss-nested'),
+
   ...config.production ? [
     require('postcss-browser-reporter')(), // dev
   ] : [], // prod

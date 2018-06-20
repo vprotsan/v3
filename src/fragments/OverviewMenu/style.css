@@ -1,0 +1,20 @@
+.verticalSubMenu){
+  display: flex;
+}
+
+.horizSubMenu {
+  display: flex;
+  border: 1px solid #ffffff;
+}
+
+.horizSubMenu ul {
+  list-style: none;
+}
+
+.horizSubMenu ul li a {
+  color: red;
+}
+
+.horizSubMenu nav ul {
+  display: flex;
+}
