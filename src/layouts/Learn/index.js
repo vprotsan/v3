@@ -124,7 +124,7 @@ class LearnPage extends React.Component {
                 </div>
               </section>
               <section className={s.benefitsOfServFramework}>
-                  <h3>Benefits of Serverless Applications</h3>
+                  <h3>Benefits of Serverless Framework</h3>
                   <p>These are the 4 core benefits of Serverless Applications you should know about</p>
                   <div className={s.innerWrapper}>
                       <div className={s.col}>

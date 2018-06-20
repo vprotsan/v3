@@ -47,6 +47,11 @@ $lightgrey: #8C8C8C;
   width: 50%;
 }
 section {
+  p {
+    color: $lightgrey;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
   h2 {
     position: relative;
     font-size: 4.8rem;
@@ -61,6 +66,10 @@ section {
     background: url('../../assets/reddotgrid.svg') no-repeat;
     width: 98px;
     height: 38px;
+  }
+  h4{
+    font-size: 3.2rem;
+    font-weight: 300;
   }
   &.theserverlessmovement,
   &.whatMakesServerless {
@@ -115,17 +124,16 @@ section {
     margin-top: 168px;
 
     h3 + p {
+      font-size: 1.2rem;
+      color: $lightgrey;
       text-align: center;
+      margin-top: 2rem;
     }
     h3 {
-      font-size: 3rem;
-      font-weight: 300;
+      font-size: 4rem;
+      font-weight: 400;
       line-height: 1;
       margin-bottom: 0;
-    }
-    p {
-      color: $lightgrey;
-      font-size: 1.2rem;
     }
     .innerWrapper {
       flex-wrap: wrap;
@@ -136,7 +144,11 @@ section {
         width: 50%;
         h4 {
           padding: 20px 0;
-          margin: 0;
+          margin-top: 1rem;
+          margin-bottom: 0;
+        }
+        p{
+          margin-top: 0;
         }
         img {
           max-width: 128px;
@@ -159,41 +171,25 @@ section {
     .col:nth-child(4) {
       padding-left: 12rem;
     }
-    .col:first-child h4::after {
+    .col h4::after {
       position: absolute;
-      top: -16px;
-      left: -29px;
       display: block;
-      content: '01';
+      top: -24px;
+      left: -42px;
       color: rgba(253, 87, 80,  0.1);
-      font-size: 7rem;
+      font-size: 10rem;
+    }
+    .col:first-child h4::after {
+      content: '01';
     }
     .col:nth-child(2) h4::after {
-      position: absolute;
-      top: -16px;
-      left: -29px;
-      display: block;
       content: '02';
-      color: rgba(253, 87, 80,  0.1);
-      font-size: 7rem;
     }
     .col:nth-child(3) h4::after {
-      position: absolute;
-      top: -16px;
-      left: -29px;
-      display: block;
       content: '03';
-      color: rgba(253, 87, 80,  0.1);
-      font-size: 7rem;
     }
     .col:nth-child(4) h4::after {
-      position: absolute;
-      top: -16px;
-      left: -29px;
-      display: block;
       content: '04';
-      color: rgba(253, 87, 80,  0.1);
-      font-size: 7rem;
     }
   }
   &.theserverlessFramework {
