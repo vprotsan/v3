@@ -135,7 +135,8 @@ const DefaultLayout = (props) => {
   )
   const customScripts = getCustomScripts(head)
   return (
-    <div id='base' className={pageClass}>
+    <div id='base' className={styles.mainWrapper}>
+    {/* <div id='base' className={pageClass}> */}
       <Helmet title={metaTitle} meta={meta} link={link} />
       <style>{".async-hide { opacity: 0 !important} "}</style>
       <script>{`(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -143,19 +144,15 @@ const DefaultLayout = (props) => {
       (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
     })(window,document.documentElement,'async-hide','dataLayer',4000,
     {'GTM-M5WQLDN':true});`}</script>
-      <Header
-        whiteLogo={!!(whiteLogo)}
-        colored={coloredHeader !== false && coloredHeader !== undefined}
-        hideCTA={headerHideCTA !== false && headerHideCTA !== undefined}
-        hideSignUp={ headerHideSignUp }
-      />
+      <Header/>
       {hero}
-      <div className={classes}>
+      <div className="outerWrapper">
+      {/* <div className={classes}> */}
         {header}
         {children || markdown}
         {footer}
       </div>
-      {footerRender}
+      {/* {footerRender} */}
       {customScripts}
     </div>
   )

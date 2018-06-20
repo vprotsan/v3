@@ -14,16 +14,16 @@ import s from './styles.css'
 // import Btn from '../../fragments/Btn'
 
 //images
-// import ServerlessMovementImage from '../../assets/theserverlessmovement.png'
-// import WhatmakesAnApplication from '../../assets/whatmakesanapplication.png'
-// import ZeroAdministration from '../../assets/zeroAdministration.svg'
-// import AutoScaling from '../../assets/AutoScaling.svg'
-// import PayPerUse from '../../assets/payperuse.svg'
-// import IncreasedVelocity from '../../assets/increasedvelocity.svg'
-// import IncreaseDevSpeed from '../../assets/increaseddevspeed.svg'
-// import vendorlockin from  '../../assets/avoidvendor.svg'
-// import Infrastructure from '../../assets/infrastructure.svg'
-// import Ecosystem from '../../assets/ecosystem.svg'
+import ServerlessMovementImage from '../../assets/theserverlessmovement.png'
+import WhatmakesAnApplication from '../../assets/whatmakesanapplication.png'
+import ZeroAdministration from '../../assets/zeroAdministration.svg'
+import AutoScaling from '../../assets/AutoScaling.svg'
+import PayPerUse from '../../assets/payperuse.svg'
+import IncreasedVelocity from '../../assets/increasedvelocity.svg'
+import IncreaseDevSpeed from '../../assets/increaseddevspeed.svg'
+import vendorlockin from  '../../assets/avoidvendor.svg'
+import Infrastructure from '../../assets/infrastructure.svg'
+import Ecosystem from '../../assets/ecosystem.svg'
 
 class LearnPage extends React.Component {
   render() {
@@ -33,12 +33,11 @@ class LearnPage extends React.Component {
 
     return (
       <Default>
-          <div className={s.mainWrapper}>
-            <h1>Learn section</h1>
+          {/* <div className={s.mainWrapper}> */}
             {/* <Header /> */}
-            {/* <div className="outerWrapper">
+            <div className="outerWrapper">
               <div className={s.mainImage}>
-                <SubMenu horizPos={true}/>
+                {/* <SubMenu horizPos={true}/> */}
                 <div className={s.mainImageInnerwrapper}>
                     <div>
                         <h1>Why Serverless?</h1>
@@ -49,7 +48,7 @@ class LearnPage extends React.Component {
                         </div>
                     </div>
                     <div>
-                    <SubMenu horizPos={false}/>
+                    {/* <SubMenu horizPos={false}/> */}
                     </div>
                 </div>
               </div>
@@ -84,7 +83,7 @@ class LearnPage extends React.Component {
               <section className={s.getStarted}>
                   <div className={s.innerWrapper}>
                     <p>focus on your business logic, not your servers.</p>
-                    <Btn to={'#'} btnClassType={'white'} text={'get started'}/>
+                    {/* <Btn to={'#'} btnClassType={'white'} text={'get started'}/> */}
                   </div>
               </section>
               <section className={s.benefits}>
@@ -162,11 +161,11 @@ class LearnPage extends React.Component {
                       <p>Or if you’re ready, follow our step-by-step guide to start building a Serverless Application with your favorite language.</p>
                     </div>
                     <div className={colRight}>
-                      <SubMenu horizPos={false} appliedClass={'red'}/>
+                      {/* <SubMenu horizPos={false} appliedClass={'red'}/> */}
                     </div>
                 </div>
               </section>
-            </div> */}
+            </div>
             {/*  make a conponent */}
             {/* <footer>
               <div className={s.innerWrapper}>
@@ -196,7 +195,7 @@ class LearnPage extends React.Component {
                 </div>
               </div>
             </footer> */}
-         </div>
+         {/* </div> */}
        </Default>
     );
   }

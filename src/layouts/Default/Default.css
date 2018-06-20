@@ -1,6 +1,16 @@
 .base {
   min-height: calc(100vh - $navHeight);
 }
+
+$white: #ffffff;
+$redcolor: #FD5750;
+$textColor: #272727;
+$lightgrey: #8C8C8C;
+
+.mainWrapper {
+  color: $textColor;
+}
+
 .page {
   max-width: 96rem;
   margin: 8rem auto 0 auto;
