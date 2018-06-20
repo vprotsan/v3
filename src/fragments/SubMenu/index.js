@@ -12,16 +12,16 @@ const SubMenu = (props) => {
         <nav>
           <ul>
             <li className={s.link}>
-              <Link className={s.linkActive} to='/overview/'>overview</Link>
+              <Link className={s.linkActive} to='/learn/overview/'>overview</Link>
             </li>
             <li className={s.link}>
-              <Link to='/usecases/'>usecases</Link>
+              <Link to='/learn/usecases/'>usecases</Link>
             </li>
             <li className={s.link}>
-              <Link to='/comparisons/'>comparisons</Link>
+              <Link to='/learn/comparisons/'>comparisons</Link>
             </li>
             <li className={s.link}>
-              <Link to='/casestudies/'>casestudies</Link>
+              <Link to='/learn/casestudies/'>casestudies</Link>
             </li>
           </ul>
         </nav>
